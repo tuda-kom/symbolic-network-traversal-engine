@@ -1,0 +1,132 @@
+{
+  "nodes": [
+    {
+      "id": "host-a",
+      "labels": {
+        "LAYER": "3",
+        "_x": "600",
+        "_y": "350"
+      }
+    },
+    {
+      "id": "router",
+      "labels": {
+        "LAYER": "3",
+        "_x": "525",
+        "_y": "450"
+      }
+    },
+    {
+      "id": "switch",
+      "labels": {
+        "LAYER": "2",
+        "_x": "700",
+        "_y": "450"
+      }
+    },
+    {
+      "id": "host-b",
+      "labels": {
+        "LAYER": "3",
+        "_x": "775",
+        "_y": "350"
+      }
+    },
+    {
+      "id": "host-c",
+      "labels": {
+        "LAYER": "3",
+        "_x": "875",
+        "_y": "450"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "src": "host-a",
+      "dst": "router",
+      "match": {
+        "dip": "!10.8.0.10",
+        "sip": "10.8.0.10"
+      },
+      "actions": {},
+      "labels": {}
+    },
+    {
+      "id": "e2",
+      "src": "router",
+      "dst": "host-a",
+      "match": {
+        "dip": "10.8.0.10",
+        "sip": "!10.8.0.10"
+      },
+      "actions": {},
+      "labels": {}
+    },
+    {
+      "id": "e3",
+      "src": "switch",
+      "dst": "router",
+      "match": {
+        "dip": "!10.4.0.0/16"
+      },
+      "actions": {},
+      "labels": {}
+    },
+    {
+      "id": "e4",
+      "src": "router",
+      "dst": "switch",
+      "match": {
+        "dip": "10.4.0.0/16"
+      },
+      "actions": {},
+      "labels": {}
+    },
+    {
+      "id": "e5",
+      "src": "host-b",
+      "dst": "switch",
+      "match": {
+        "dip": "!10.4.0.50",
+        "sip": "10.4.0.50"
+      },
+      "actions": {},
+      "labels": {}
+    },
+    {
+      "id": "e6",
+      "src": "switch",
+      "dst": "host-b",
+      "match": {
+        "dip": "10.4.0.50",
+        "sip": "!10.4.0.50"
+      },
+      "actions": {},
+      "labels": {}
+    },
+    {
+      "id": "e7",
+      "src": "switch",
+      "dst": "host-c",
+      "match": {
+        "dip": "10.4.0.60",
+        "sip": "!10.4.0.60"
+      },
+      "actions": {},
+      "labels": {}
+    },
+    {
+      "id": "e8",
+      "src": "host-c",
+      "dst": "switch",
+      "match": {
+        "dip": "!10.4.0.60",
+        "sip": "10.4.0.60"
+      },
+      "actions": {},
+      "labels": {}
+    }
+  ]
+}

@@ -1,0 +1,574 @@
+{
+  "nodes": [
+    {
+      "id": "core-1",
+      "labels": {
+        "role": "switch",
+        "manufacturer": "Mellanox",
+        "LAYER": "2",
+        "_x": "75",
+        "_y": "-25"
+      }
+    },
+    {
+      "id": "core-2",
+      "labels": {
+        "role": "switch",
+        "manufacturer": "Mellanox",
+        "LAYER": "2",
+        "_x": "75",
+        "_y": "175"
+      }
+    },
+    {
+      "id": "pve-1",
+      "labels": {
+        "role": "hypervisor",
+        "os": "Proxmox",
+        "LAYER": "3",
+        "_x": "425",
+        "_y": "-175"
+      }
+    },
+    {
+      "id": "pve-2",
+      "labels": {
+        "role": "hypervisor",
+        "os": "Proxmox",
+        "LAYER": "3",
+        "_x": "425",
+        "_y": "75"
+      }
+    },
+    {
+      "id": "pve-3",
+      "labels": {
+        "role": "hypervisor",
+        "os": "Proxmox",
+        "LAYER": "3",
+        "_x": "425",
+        "_y": "300"
+      }
+    },
+    {
+      "id": "vm-1",
+      "labels": {
+        "os": "Alpine",
+        "LAYER": "3",
+        "_x": "600",
+        "_y": "-250"
+      }
+    },
+    {
+      "id": "vm-2",
+      "labels": {
+        "os": "Debian",
+        "LAYER": "3",
+        "_x": "600",
+        "_y": "-100"
+      }
+    },
+    {
+      "id": "vm-3",
+      "labels": {
+        "os": "Debian",
+        "LAYER": "3",
+        "_x": "600",
+        "_y": "0"
+      }
+    },
+    {
+      "id": "vm-4",
+      "labels": {
+        "os": "Alpine",
+        "LAYER": "3",
+        "_x": "600",
+        "_y": "150"
+      }
+    },
+    {
+      "id": "vm-6",
+      "labels": {
+        "os": "Rocky",
+        "LAYER": "3",
+        "_x": "600",
+        "_y": "225"
+      }
+    },
+    {
+      "id": "vm-5",
+      "labels": {
+        "os": "Debian",
+        "LAYER": "3",
+        "_x": "600",
+        "_y": "375"
+      }
+    },
+    {
+      "id": "nginx",
+      "labels": {
+        "app": "nginx",
+        "LAYER": "4",
+        "_x": "750",
+        "_y": "-250"
+      }
+    },
+    {
+      "id": "postgres",
+      "labels": {
+        "app": "postgres",
+        "LAYER": "4",
+        "_x": "750",
+        "_y": "-100"
+      }
+    },
+    {
+      "id": "nginx-2",
+      "labels": {
+        "app": "nginx",
+        "LAYER": "4",
+        "_x": "750",
+        "_y": "0"
+      }
+    },
+    {
+      "id": "redis",
+      "labels": {
+        "app": "redis",
+        "LAYER": "4",
+        "_x": "750",
+        "_y": "150"
+      }
+    },
+    {
+      "id": "prometheus",
+      "labels": {
+        "app": "prometheus",
+        "LAYER": "4",
+        "_x": "750",
+        "_y": "225"
+      }
+    },
+    {
+      "id": "redis-2",
+      "labels": {
+        "app": "redis",
+        "LAYER": "4",
+        "_x": "750",
+        "_y": "375"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "vl-1",
+      "src": "vm-1",
+      "dst": "pve-1",
+      "match": {
+        "src_ip": "10.1.1.10",
+        "dst_ip": "!10.1.1.10"
+      },
+      "actions": {},
+      "labels": {
+        "speed": "100G"
+      }
+    },
+    {
+      "id": "vl-2",
+      "src": "pve-1",
+      "dst": "vm-1",
+      "match": {
+        "dst_ip": "10.1.1.10",
+        "src_ip": "!10.1.1.10"
+      },
+      "actions": {},
+      "labels": {}
+    },
+    {
+      "id": "vl-3",
+      "src": "vm-2",
+      "dst": "pve-1",
+      "match": {
+        "src_ip": "10.1.1.11",
+        "dst_ip": "!10.1.1.11"
+      },
+      "actions": {},
+      "labels": {
+        "speed": "100G"
+      }
+    },
+    {
+      "id": "vl-4",
+      "src": "pve-1",
+      "dst": "vm-2",
+      "match": {
+        "dst_ip": "10.1.1.11",
+        "src_ip": "!10.1.1.11"
+      },
+      "actions": {},
+      "labels": {}
+    },
+    {
+      "id": "vl-5",
+      "src": "vm-3",
+      "dst": "pve-2",
+      "match": {
+        "src_ip": "10.1.2.10",
+        "dst_ip": "!10.1.2.10"
+      },
+      "actions": {},
+      "labels": {
+        "speed": "100G"
+      }
+    },
+    {
+      "id": "vl-6",
+      "src": "pve-2",
+      "dst": "vm-3",
+      "match": {
+        "dst_ip": "10.1.2.10",
+        "src_ip": "!10.1.2.10"
+      },
+      "actions": {},
+      "labels": {}
+    },
+    {
+      "id": "vl-7",
+      "src": "vm-4",
+      "dst": "pve-2",
+      "match": {
+        "src_ip": "10.1.2.11",
+        "dst_ip": "!10.1.2.11"
+      },
+      "actions": {},
+      "labels": {
+        "speed": "100G"
+      }
+    },
+    {
+      "id": "vl-8",
+      "src": "pve-2",
+      "dst": "vm-4",
+      "match": {
+        "dst_ip": "10.1.2.11",
+        "src_ip": "!10.1.2.11"
+      },
+      "actions": {},
+      "labels": {}
+    },
+    {
+      "id": "vl-9",
+      "src": "vm-6",
+      "dst": "pve-3",
+      "match": {
+        "src_ip": "10.1.3.10",
+        "dst_ip": "!10.1.3.10"
+      },
+      "actions": {},
+      "labels": {
+        "speed": "100G"
+      }
+    },
+    {
+      "id": "vl-10",
+      "src": "pve-3",
+      "dst": "vm-6",
+      "match": {
+        "src_ip": "!10.1.3.10",
+        "dst_ip": "10.1.3.10"
+      },
+      "actions": {},
+      "labels": {}
+    },
+    {
+      "id": "vl-11",
+      "src": "vm-5",
+      "dst": "pve-3",
+      "match": {
+        "src_ip": "10.1.3.11",
+        "dst_ip": "!10.1.3.11"
+      },
+      "actions": {},
+      "labels": {
+        "speed": "100G"
+      }
+    },
+    {
+      "id": "vl-12",
+      "src": "pve-3",
+      "dst": "vm-5",
+      "match": {
+        "dst_ip": "10.1.3.11",
+        "src_ip": "!10.1.3.11"
+      },
+      "actions": {},
+      "labels": {}
+    },
+    {
+      "id": "e243",
+      "src": "core-1",
+      "dst": "core-2",
+      "match": {},
+      "actions": {},
+      "labels": {
+        "speed": "100G"
+      }
+    },
+    {
+      "id": "e244",
+      "src": "core-2",
+      "dst": "core-1",
+      "match": {},
+      "actions": {},
+      "labels": {
+        "speed": "100G"
+      }
+    },
+    {
+      "id": "e245",
+      "src": "core-1",
+      "dst": "pve-1",
+      "match": {
+        "dst_ip": "10.1.1.10|10.1.1.11"
+      },
+      "actions": {},
+      "labels": {
+        "speed": "25G"
+      }
+    },
+    {
+      "id": "e246",
+      "src": "pve-1",
+      "dst": "core-1",
+      "match": {
+        "dst_ip": "!10.1.1.10|10.1.1.11"
+      },
+      "actions": {},
+      "labels": {
+        "speed": "25G"
+      }
+    },
+    {
+      "id": "e247",
+      "src": "core-1",
+      "dst": "pve-2",
+      "match": {
+        "dst_ip": "10.1.2.10|10.1.2.11"
+      },
+      "actions": {},
+      "labels": {
+        "speed": "25G"
+      }
+    },
+    {
+      "id": "e248",
+      "src": "pve-2",
+      "dst": "core-1",
+      "match": {
+        "dst_ip": "!10.1.2.10|10.1.2.11"
+      },
+      "actions": {},
+      "labels": {
+        "speed": "25G"
+      }
+    },
+    {
+      "id": "e249",
+      "src": "core-1",
+      "dst": "pve-3",
+      "match": {
+        "dst_ip": "10.1.3.11|10.1.3.10"
+      },
+      "actions": {},
+      "labels": {
+        "speed": "25G"
+      }
+    },
+    {
+      "id": "e250",
+      "src": "pve-3",
+      "dst": "core-1",
+      "match": {
+        "dst_ip": "!10.1.3.11|10.1.3.10"
+      },
+      "actions": {},
+      "labels": {
+        "speed": "25G"
+      }
+    },
+    {
+      "id": "e251",
+      "src": "core-2",
+      "dst": "pve-1",
+      "match": {
+        "dst_ip": "10.1.1.10|10.1.1.11"
+      },
+      "actions": {},
+      "labels": {
+        "speed": "25G"
+      }
+    },
+    {
+      "id": "e252",
+      "src": "pve-1",
+      "dst": "core-2",
+      "match": {
+        "dst_ip": "!10.1.1.10|10.1.1.11"
+      },
+      "actions": {},
+      "labels": {
+        "speed": "25G"
+      }
+    },
+    {
+      "id": "e253",
+      "src": "core-2",
+      "dst": "pve-2",
+      "match": {
+        "dst_ip": "10.1.2.10|10.1.2.11"
+      },
+      "actions": {},
+      "labels": {
+        "speed": "25G"
+      }
+    },
+    {
+      "id": "e254",
+      "src": "pve-2",
+      "dst": "core-2",
+      "match": {
+        "dst_ip": "!10.1.2.10|10.1.2.11"
+      },
+      "actions": {},
+      "labels": {
+        "speed": "25G"
+      }
+    },
+    {
+      "id": "e255",
+      "src": "core-2",
+      "dst": "pve-3",
+      "match": {
+        "dst_ip": "10.1.3.11|10.1.3.10"
+      },
+      "actions": {},
+      "labels": {
+        "speed": "25G"
+      }
+    },
+    {
+      "id": "e256",
+      "src": "pve-3",
+      "dst": "core-2",
+      "match": {
+        "dst_ip": "!10.1.3.11|10.1.3.10"
+      },
+      "actions": {},
+      "labels": {
+        "speed": "25G"
+      }
+    },
+    {
+      "id": "e257",
+      "src": "vm-1",
+      "dst": "nginx",
+      "match": {
+        "d_port": "80|443"
+      },
+      "actions": {},
+      "labels": {}
+    },
+    {
+      "id": "e258",
+      "src": "nginx",
+      "dst": "vm-1",
+      "match": {},
+      "actions": {}
+    },
+    {
+      "id": "e259",
+      "src": "vm-2",
+      "dst": "postgres",
+      "match": {
+        "d_port": "5432"
+      },
+      "actions": {},
+      "labels": {}
+    },
+    {
+      "id": "e260",
+      "src": "postgres",
+      "dst": "vm-2",
+      "match": {},
+      "actions": {}
+    },
+    {
+      "id": "e261",
+      "src": "vm-3",
+      "dst": "nginx-2",
+      "match": {
+        "d_port": "80|443"
+      },
+      "actions": {},
+      "labels": {}
+    },
+    {
+      "id": "e262",
+      "src": "nginx-2",
+      "dst": "vm-3",
+      "match": {},
+      "actions": {}
+    },
+    {
+      "id": "e263",
+      "src": "vm-4",
+      "dst": "redis",
+      "match": {
+        "d_port": "6379"
+      },
+      "actions": {},
+      "labels": {}
+    },
+    {
+      "id": "e264",
+      "src": "redis",
+      "dst": "vm-4",
+      "match": {},
+      "actions": {}
+    },
+    {
+      "id": "e265",
+      "src": "vm-6",
+      "dst": "prometheus",
+      "match": {
+        "d_port": "9090"
+      },
+      "actions": {},
+      "labels": {}
+    },
+    {
+      "id": "e266",
+      "src": "prometheus",
+      "dst": "vm-6",
+      "match": {},
+      "actions": {}
+    },
+    {
+      "id": "e267",
+      "src": "vm-5",
+      "dst": "redis-2",
+      "match": {
+        "d_port": "6379"
+      },
+      "actions": {},
+      "labels": {}
+    },
+    {
+      "id": "e268",
+      "src": "redis-2",
+      "dst": "vm-5",
+      "match": {},
+      "actions": {}
+    }
+  ]
+}

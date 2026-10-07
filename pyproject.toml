@@ -1,0 +1,13 @@
+[project]
+name = "symbolic-network-traversal-engine"
+version = "0.1.0"
+description = "A symbolic stateful graph search tool for network analysis and verification."
+readme = "README.md"
+requires-python = ">=3.14"
+license="MIT"
+license-files = ["LICENSE"]
+dependencies = [
+    "json5>=0.15.0",
+    "macaddress>=2.0.2",
+    "portion>=2.6.2"
+]

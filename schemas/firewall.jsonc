@@ -1,0 +1,936 @@
+{
+  "nodes": [
+    {
+      "id": "pkt-in",
+      "labels": {
+        "_x": "325",
+        "_y": "275"
+      }
+    },
+    {
+      "id": "prerouting",
+      "labels": {
+        "DEVICE": "prerouting",
+        "_x": "650",
+        "_y": "125"
+      }
+    },
+    {
+      "id": "int-wan",
+      "labels": {
+        "DEVICE": "ifaces",
+        "_x": "475",
+        "_y": "125"
+      }
+    },
+    {
+      "id": "int-lan",
+      "labels": {
+        "DEVICE": "ifaces",
+        "_x": "475",
+        "_y": "200"
+      }
+    },
+    {
+      "id": "int-dmz",
+      "labels": {
+        "DEVICE": "ifaces",
+        "_x": "475",
+        "_y": "275"
+      }
+    },
+    {
+      "id": "pre-nat-in",
+      "labels": {
+        "DEVICE": "prerouting",
+        "_x": "875",
+        "_y": "125"
+      }
+    },
+    {
+      "id": "prerouting-out",
+      "labels": {
+        "DEVICE": "prerouting",
+        "_x": "650",
+        "_y": "225"
+      }
+    },
+    {
+      "id": "nat-wan-out",
+      "labels": {
+        "DEVICE": "prerouting",
+        "_x": "875",
+        "_y": "225"
+      }
+    },
+    {
+      "id": "input",
+      "labels": {
+        "DEVICE": "input",
+        "_x": "1050",
+        "_y": "125"
+      }
+    },
+    {
+      "id": "forward",
+      "labels": {
+        "DEVICE": "forward",
+        "_x": "1050",
+        "_y": "325"
+      }
+    },
+    {
+      "id": "filter-input",
+      "labels": {
+        "DEVICE": "input",
+        "_x": "1375",
+        "_y": "125"
+      }
+    },
+    {
+      "id": "filter-forward",
+      "labels": {
+        "DEVICE": "forward",
+        "_x": "1375",
+        "_y": "325"
+      }
+    },
+    {
+      "id": "accept",
+      "labels": {
+        "DEVICE": "accept",
+        "_x": "1750",
+        "_y": "125"
+      }
+    },
+    {
+      "id": "fw-from-wan",
+      "labels": {
+        "DEVICE": "forward",
+        "_x": "1375",
+        "_y": "225"
+      }
+    },
+    {
+      "id": "fw-from-lan",
+      "labels": {
+        "DEVICE": "forward",
+        "_x": "1200",
+        "_y": "325"
+      }
+    },
+    {
+      "id": "fw-from-dmz",
+      "labels": {
+        "DEVICE": "forward",
+        "_x": "1375",
+        "_y": "425"
+      }
+    },
+    {
+      "id": "int-local",
+      "labels": {
+        "DEVICE": "ifaces",
+        "_x": "475",
+        "_y": "500"
+      }
+    },
+    {
+      "id": "output",
+      "labels": {
+        "DEVICE": "output",
+        "_x": "1050",
+        "_y": "575"
+      }
+    },
+    {
+      "id": "postrouting",
+      "labels": {
+        "DEVICE": "postrouting",
+        "_x": "1550",
+        "_y": "325"
+      }
+    },
+    {
+      "id": "post-nat-in",
+      "labels": {
+        "DEVICE": "postrouting",
+        "_x": "1550",
+        "_y": "400"
+      }
+    },
+    {
+      "id": "post-nat-out",
+      "labels": {
+        "DEVICE": "postrouting",
+        "_x": "1750",
+        "_y": "400"
+      }
+    },
+    {
+      "id": "postrouting-out",
+      "labels": {
+        "DEVICE": "postrouting",
+        "_x": "1750",
+        "_y": "325"
+      }
+    },
+    {
+      "id": "filter-output",
+      "labels": {
+        "DEVICE": "output",
+        "_x": "1375",
+        "_y": "575"
+      }
+    },
+    {
+      "id": "router",
+      "labels": {
+        "DEVICE": "routing",
+        "_x": "650",
+        "_y": "500"
+      }
+    },
+    {
+      "id": "router-out",
+      "labels": {
+        "DEVICE": "routing",
+        "_x": "875",
+        "_y": "325"
+      }
+    },
+    {
+      "id": "out-to-lan",
+      "labels": {
+        "DEVICE": "output",
+        "_x": "1225",
+        "_y": "525"
+      }
+    },
+    {
+      "id": "out-to-dmz",
+      "labels": {
+        "DEVICE": "output",
+        "_x": "1225",
+        "_y": "575"
+      }
+    },
+    {
+      "id": "out-to-wan",
+      "labels": {
+        "DEVICE": "output",
+        "_x": "1225",
+        "_y": "625"
+      }
+    },
+    {
+      "id": "out-to-lo",
+      "labels": {
+        "DEVICE": "output",
+        "_x": "1225",
+        "_y": "675"
+      }
+    },
+    {
+      "id": "int-loopback",
+      "labels": {
+        "DEVICE": "ifaces",
+        "_x": "475",
+        "_y": "350"
+      }
+    },
+    {
+      "id": "lo-wp0",
+      "labels": {
+        "_x": "1875",
+        "_y": "325"
+      }
+    },
+    {
+      "id": "lo-wp1",
+      "labels": {
+        "_x": "1875",
+        "_y": "750"
+      }
+    },
+    {
+      "id": "lo-wp2",
+      "labels": {
+        "_x": "325",
+        "_y": "750"
+      }
+    },
+    {
+      "id": "lo-wp3",
+      "labels": {
+        "_x": "325",
+        "_y": "350"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e9",
+      "src": "pkt-in",
+      "dst": "int-wan",
+      "match": {},
+      "actions": {},
+      "labels": {}
+    },
+    {
+      "id": "e11",
+      "src": "pkt-in",
+      "dst": "int-dmz",
+      "match": {},
+      "actions": {},
+      "labels": {}
+    },
+    {
+      "id": "e12",
+      "src": "int-wan",
+      "dst": "prerouting",
+      "match": {
+        "l3_src_ip": "!10.0.0.0/8",
+        "in_iface": "wan"
+      },
+      "actions": {},
+      "labels": {}
+    },
+    {
+      "id": "e13",
+      "src": "int-lan",
+      "dst": "prerouting",
+      "match": {
+        "l3_src_ip": "10.4.0.0/16",
+        "in_iface": "lan"
+      },
+      "actions": {},
+      "labels": {}
+    },
+    {
+      "id": "e14",
+      "src": "int-dmz",
+      "dst": "prerouting",
+      "match": {
+        "l3_src_ip": "10.8.0.0/16",
+        "in_iface": "dmz"
+      },
+      "actions": {},
+      "labels": {}
+    },
+    {
+      "id": "e21",
+      "src": "pre-nat-in",
+      "dst": "nat-wan-out",
+      "match": {
+        "l3_src_ip": "!10.0.0.0/8",
+        "l3_dst_ip": "1.2.3.4",
+        "l4_dst_port": "80|443",
+        "ctstate": "new|established"
+      },
+      "actions": {
+        "l3_dst_ip": "10.8.0.50",
+        "dnat": "True"
+      },
+      "labels": {}
+    },
+    {
+      "id": "e26",
+      "src": "input",
+      "dst": "filter-input",
+      "match": {
+        "l3_src_ip": "10.4.0.0/16",
+        "l4_dst_port": "80|443",
+        "l3_dst_ip": "10.4.0.1",
+        "in_iface": "!local|loopback"
+      },
+      "actions": {},
+      "labels": {}
+    },
+    {
+      "id": "e27",
+      "src": "filter-input",
+      "dst": "accept",
+      "match": {},
+      "actions": {
+        "do_nat": ""
+      },
+      "labels": {}
+    },
+    {
+      "id": "e28",
+      "src": "forward",
+      "dst": "fw-from-wan",
+      "match": {
+        "l3_src_ip": "!10.0.0.0/8"
+      },
+      "actions": {},
+      "labels": {}
+    },
+    {
+      "id": "e29",
+      "src": "forward",
+      "dst": "fw-from-lan",
+      "match": {
+        "l3_src_ip": "10.4.0.0/16"
+      },
+      "actions": {},
+      "labels": {}
+    },
+    {
+      "id": "e30",
+      "src": "forward",
+      "dst": "fw-from-dmz",
+      "match": {
+        "l3_src_ip": "10.8.0.0/16"
+      },
+      "actions": {},
+      "labels": {}
+    },
+    {
+      "id": "e31",
+      "src": "fw-from-wan",
+      "dst": "filter-forward",
+      "match": {
+        "l3_dst_ip": "10.8.0.50",
+        "l4_dst_port": "80|443",
+        "ctstate": "new|established"
+      },
+      "actions": {},
+      "labels": {}
+    },
+    {
+      "id": "e32",
+      "src": "fw-from-lan",
+      "dst": "filter-forward",
+      "match": {
+        "l3_dst_ip": "!10.0.0.0/8",
+        "ctstate": "new|established"
+      },
+      "actions": {
+        "do_nat": "0x1"
+      },
+      "labels": {}
+    },
+    {
+      "id": "e33",
+      "src": "fw-from-lan",
+      "dst": "filter-forward",
+      "match": {
+        "l3_dst_ip": "10.8.0.0/16",
+        "ctstate": "new|established"
+      },
+      "actions": {},
+      "labels": {}
+    },
+    {
+      "id": "e34",
+      "src": "fw-from-dmz",
+      "dst": "filter-forward",
+      "match": {
+        "l3_dst_ip": "!10.0.0.0/8",
+        "ctstate": "new|established"
+      },
+      "actions": {
+        "do_nat": "0x1"
+      },
+      "labels": {}
+    },
+    {
+      "id": "e35",
+      "src": "fw-from-dmz",
+      "dst": "filter-forward",
+      "match": {
+        "l3_src_ip": "10.8.0.50",
+        "l3_dst_ip": "10.4.0.50",
+        "l4_dst_port": "53",
+        "ctstate": "new|established"
+      },
+      "actions": {},
+      "labels": {}
+    },
+    {
+      "id": "e36",
+      "src": "pkt-in",
+      "dst": "int-local",
+      "match": {},
+      "actions": {},
+      "labels": {}
+    },
+    {
+      "id": "e38",
+      "src": "filter-forward",
+      "dst": "postrouting",
+      "match": {},
+      "actions": {}
+    },
+    {
+      "id": "e39",
+      "src": "postrouting",
+      "dst": "post-nat-in",
+      "match": {
+        "do_nat": "0x1"
+      },
+      "actions": {},
+      "labels": {}
+    },
+    {
+      "id": "e40",
+      "src": "post-nat-in",
+      "dst": "post-nat-out",
+      "match": {
+        "l3_src_ip": "10.0.0.0/8"
+      },
+      "actions": {
+        "l3_src_ip": "1.2.3.4",
+        "l4_src_port": "30000-32000",
+        "snat": "True"
+      },
+      "labels": {}
+    },
+    {
+      "id": "e42",
+      "src": "postrouting",
+      "dst": "postrouting-out",
+      "match": {
+        "do_nat": "0x0"
+      },
+      "actions": {},
+      "labels": {}
+    },
+    {
+      "id": "e43",
+      "src": "post-nat-out",
+      "dst": "postrouting-out",
+      "match": {},
+      "actions": {
+        "do_nat": "0x0"
+      },
+      "labels": {}
+    },
+    {
+      "id": "e44",
+      "src": "postrouting-out",
+      "dst": "accept",
+      "match": {
+        "out_iface": "!loopback"
+      },
+      "actions": {
+        "do_nat": ""
+      },
+      "labels": {}
+    },
+    {
+      "id": "e45",
+      "src": "fw-from-wan",
+      "dst": "filter-forward",
+      "match": {
+        "l3_dst_ip": "10.4.0.0/16",
+        "ctstate": "established"
+      },
+      "actions": {},
+      "labels": {}
+    },
+    {
+      "id": "e47",
+      "src": "filter-output",
+      "dst": "postrouting",
+      "match": {},
+      "actions": {}
+    },
+    {
+      "id": "e51",
+      "src": "prerouting-out",
+      "dst": "router",
+      "match": {},
+      "actions": {
+        "r_idx": "0",
+        "source": "prerouting"
+      },
+      "labels": {}
+    },
+    {
+      "id": "e54",
+      "src": "router",
+      "dst": "router",
+      "match": {
+        "r_idx": "0"
+      },
+      "actions": {
+        "r_idx": "1"
+      },
+      "labels": {}
+    },
+    {
+      "id": "e55",
+      "src": "router",
+      "dst": "router-out",
+      "match": {
+        "l3_dst_ip": "10.4.0.1|10.8.0.1|1.2.3.4",
+        "r_idx": "0",
+        "in_iface": "local|loopback"
+      },
+      "actions": {
+        "pipeline": "input",
+        "out_iface": "loopback"
+      },
+      "labels": {}
+    },
+    {
+      "id": "e56",
+      "src": "router",
+      "dst": "router-out",
+      "match": {
+        "l3_dst_ip": "10.4.0.0/16",
+        "r_idx": "1"
+      },
+      "actions": {
+        "pipeline": "forward",
+        "out_iface": "lan"
+      },
+      "labels": {}
+    },
+    {
+      "id": "e57",
+      "src": "router",
+      "dst": "router",
+      "match": {
+        "r_idx": "1"
+      },
+      "actions": {
+        "r_idx": "2"
+      },
+      "labels": {}
+    },
+    {
+      "id": "e58",
+      "src": "router",
+      "dst": "router-out",
+      "match": {
+        "l3_dst_ip": "10.8.0.0/16",
+        "r_idx": "2"
+      },
+      "actions": {
+        "pipeline": "forward",
+        "out_iface": "dmz"
+      },
+      "labels": {}
+    },
+    {
+      "id": "e59",
+      "src": "router",
+      "dst": "router",
+      "match": {
+        "r_idx": "2"
+      },
+      "actions": {
+        "r_idx": "3"
+      },
+      "labels": {}
+    },
+    {
+      "id": "e60",
+      "src": "router",
+      "dst": "router-out",
+      "match": {
+        "l3_dst_ip": "!10.0.0.0/8",
+        "r_idx": "3"
+      },
+      "actions": {
+        "pipeline": "forward",
+        "out_iface": "wan"
+      },
+      "labels": {}
+    },
+    {
+      "id": "e61",
+      "src": "pkt-in",
+      "dst": "int-lan",
+      "match": {},
+      "actions": {}
+    },
+    {
+      "id": "e62",
+      "src": "router-out",
+      "dst": "input",
+      "match": {
+        "pipeline": "input",
+        "source": "prerouting"
+      },
+      "actions": {
+        "r_idx": "",
+        "source": "",
+        "pipeline": ""
+      },
+      "labels": {}
+    },
+    {
+      "id": "e63",
+      "src": "router-out",
+      "dst": "forward",
+      "match": {
+        "pipeline": "forward",
+        "source": "prerouting",
+        "in_iface": "!local|loopback"
+      },
+      "actions": {
+        "r_idx": "",
+        "source": "",
+        "pipeline": "",
+        "do_nat": "0x0"
+      },
+      "labels": {}
+    },
+    {
+      "id": "e64",
+      "src": "prerouting",
+      "dst": "pre-nat-in",
+      "match": {
+        "in_iface": "wan"
+      },
+      "actions": {},
+      "labels": {}
+    },
+    {
+      "id": "e65",
+      "src": "nat-wan-out",
+      "dst": "prerouting-out",
+      "match": {},
+      "actions": {}
+    },
+    {
+      "id": "e96",
+      "src": "prerouting",
+      "dst": "prerouting-out",
+      "match": {
+        "in_iface": "!wan"
+      },
+      "actions": {},
+      "labels": {}
+    },
+    {
+      "id": "e100",
+      "src": "int-local",
+      "dst": "router",
+      "match": {
+        "in_iface": "local"
+      },
+      "actions": {
+        "r_idx": "0",
+        "source": "output"
+      },
+      "labels": {}
+    },
+    {
+      "id": "e101",
+      "src": "router-out",
+      "dst": "output",
+      "match": {
+        "source": "output"
+      },
+      "actions": {
+        "r_idx": "",
+        "source": "",
+        "pipeline": "",
+        "do_nat": "0x0"
+      },
+      "labels": {}
+    },
+    {
+      "id": "e102",
+      "src": "output",
+      "dst": "out-to-lan",
+      "match": {
+        "l3_dst_ip": "10.4.0.0/16",
+        "out_iface": "!loopback",
+        "l3_src_ip": "10.4.0.1"
+      },
+      "actions": {},
+      "labels": {}
+    },
+    {
+      "id": "e103",
+      "src": "out-to-lan",
+      "dst": "filter-output",
+      "match": {
+        "ctstate": "new|established"
+      },
+      "actions": {},
+      "labels": {}
+    },
+    {
+      "id": "e104",
+      "src": "output",
+      "dst": "out-to-dmz",
+      "match": {
+        "l3_dst_ip": "10.8.0.0/16",
+        "out_iface": "!loopback",
+        "l3_src_ip": "10.8.0.1"
+      },
+      "actions": {},
+      "labels": {}
+    },
+    {
+      "id": "e105",
+      "src": "output",
+      "dst": "out-to-wan",
+      "match": {
+        "l3_dst_ip": "!10.0.0.0/8",
+        "out_iface": "!loopback",
+        "l3_src_ip": "1.2.3.4"
+      },
+      "actions": {},
+      "labels": {}
+    },
+    {
+      "id": "e106",
+      "src": "out-to-dmz",
+      "dst": "filter-output",
+      "match": {
+        "ctstate": "new|established"
+      },
+      "actions": {},
+      "labels": {}
+    },
+    {
+      "id": "e107",
+      "src": "out-to-wan",
+      "dst": "filter-output",
+      "match": {
+        "ctstate": "new|established"
+      },
+      "actions": {
+        "do_nat": "0x1"
+      },
+      "labels": {}
+    },
+    {
+      "id": "e108",
+      "src": "output",
+      "dst": "out-to-lo",
+      "match": {
+        "l3_dst_ip": "10.4.0.1|10.8.0.1|1.2.3.4",
+        "out_iface": "loopback"
+      },
+      "actions": {},
+      "labels": {}
+    },
+    {
+      "id": "e109",
+      "src": "out-to-lo",
+      "dst": "filter-output",
+      "match": {
+        "ctstate": "new|established"
+      },
+      "actions": {},
+      "labels": {}
+    },
+    {
+      "id": "e110",
+      "src": "int-loopback",
+      "dst": "prerouting",
+      "match": {
+        "l3_src_ip": "10.4.0.1|10.8.0.1|1.2.3.4",
+        "in_iface": "loopback"
+      },
+      "actions": {},
+      "labels": {}
+    },
+    {
+      "id": "e111",
+      "src": "postrouting-out",
+      "dst": "lo-wp0",
+      "match": {
+        "out_iface": "loopback"
+      },
+      "actions": {},
+      "labels": {}
+    },
+    {
+      "id": "e112",
+      "src": "lo-wp0",
+      "dst": "lo-wp1",
+      "match": {},
+      "actions": {}
+    },
+    {
+      "id": "e113",
+      "src": "lo-wp1",
+      "dst": "lo-wp2",
+      "match": {},
+      "actions": {}
+    },
+    {
+      "id": "e114",
+      "src": "lo-wp2",
+      "dst": "lo-wp3",
+      "match": {},
+      "actions": {}
+    },
+    {
+      "id": "e115",
+      "src": "lo-wp3",
+      "dst": "int-loopback",
+      "match": {},
+      "actions": {
+        "in_iface": ""
+      },
+      "labels": {}
+    },
+    {
+      "id": "e116",
+      "src": "pkt-in",
+      "dst": "int-loopback",
+      "match": {},
+      "actions": {}
+    },
+    {
+      "id": "e117",
+      "src": "input",
+      "dst": "filter-input",
+      "match": {
+        "l3_src_ip": "10.4.0.1|10.8.0.1|1.2.3.4",
+        "l4_dst_port": "80|443",
+        "l3_dst_ip": "10.4.0.1|10.8.0.1|1.2.3.4"
+      },
+      "actions": {},
+      "labels": {}
+    },
+    {
+      "id": "e118",
+      "src": "fw-from-dmz",
+      "dst": "filter-forward",
+      "match": {
+        "l3_dst_ip": "10.4.0.0/16",
+        "ctstate": "established"
+      },
+      "actions": {},
+      "labels": {}
+    },
+    {
+      "id": "e119",
+      "src": "fw-from-wan",
+      "dst": "filter-forward",
+      "match": {
+        "l3_dst_ip": "10.8.0.0-10.8.0.49|10.8.0.51-10.8.255.255",
+        "ctstate": "established"
+      },
+      "actions": {},
+      "labels": {}
+    },
+    {
+      "id": "e120",
+      "src": "pre-nat-in",
+      "dst": "nat-wan-out",
+      "match": {
+        "l3_dst_ip": "1.2.3.4",
+        "l4_dst_port": "30000-32000",
+        "ctstate": "established"
+      },
+      "actions": {
+        "l3_dst_ip": "10.8.0.0/16|10.4.0.0/16"
+      },
+      "labels": {}
+    }
+  ]
+}

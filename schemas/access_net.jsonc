@@ -1,0 +1,840 @@
+{
+  "nodes": [
+    {
+      "id": "nas-1",
+      "labels": {
+        "LAYER": 3,
+        "DEVICE": "nas-1",
+        "role": "server",
+        "host": "nas-1",
+        "manufacturer": "QNAP",
+        "l3_ip": "192.168.178.100",
+        "_x": "50",
+        "_y": "1700"
+      }
+    },
+    {
+      "id": "sw-1",
+      "labels": {
+        "LAYER": 2,
+        "DEVICE": "sw-1",
+        "role": "switch",
+        "host": "sw-2",
+        "manufacturer": "TP-Link",
+        "_x": "300",
+        "_y": "1625"
+      }
+    },
+    {
+      "id": "client-1",
+      "labels": {
+        "LAYER": 3,
+        "DEVICE": "client-1",
+        "role": "client",
+        "host": "client-1",
+        "manufacturer": "Apple",
+        "l3_ip": "192.168.178.12",
+        "_x": "50",
+        "_y": "1550"
+      }
+    },
+    {
+      "id": "gateway-1",
+      "labels": {
+        "LAYER": 3,
+        "DEVICE": "gateway-1",
+        "role": "router",
+        "host": "gateway-1",
+        "manufacturer": "AVM",
+        "l3_ip": "192.168.178.1",
+        "_x": "575",
+        "_y": "1625"
+      }
+    },
+    {
+      "id": "ont-1",
+      "labels": {
+        "LAYER": 2,
+        "DEVICE": "ont-1",
+        "role": "ont",
+        "host": "ont-1",
+        "manufacturer": "Huawei",
+        "_x": "850",
+        "_y": "1625"
+      }
+    },
+    {
+      "id": "client-2",
+      "labels": {
+        "LAYER": 3,
+        "DEVICE": "client-2",
+        "role": "client",
+        "host": "client-2",
+        "manufacturer": "Google",
+        "l3_ip": "192.168.178.50",
+        "_x": "300",
+        "_y": "1775"
+      }
+    },
+    {
+      "id": "client-3",
+      "labels": {
+        "LAYER": 3,
+        "DEVICE": "client-3",
+        "role": "client",
+        "host": "client-3",
+        "manufacturer": "Google",
+        "l3_ip": "192.168.178.52",
+        "_x": "300",
+        "_y": "1925"
+      }
+    },
+    {
+      "id": "gateway-2",
+      "labels": {
+        "LAYER": 3,
+        "DEVICE": "gateway-2",
+        "role": "router",
+        "host": "gateway-2",
+        "manufacturer": "AVM",
+        "l3_ip": "192.168.178.1",
+        "_x": "575",
+        "_y": "1775"
+      }
+    },
+    {
+      "id": "ont-2",
+      "labels": {
+        "LAYER": 2,
+        "DEVICE": "ont-2",
+        "role": "ont",
+        "host": "ont-2",
+        "manufacturer": "Huawei",
+        "_x": "850",
+        "_y": "1775"
+      }
+    },
+    {
+      "id": "splitter-1-up",
+      "labels": {
+        "LAYER": "1",
+        "DEVICE": "splitter-1",
+        "role": "pon-splitter",
+        "manufacturer": "Huawei",
+        "_x": "1225",
+        "_y": "1625"
+      }
+    },
+    {
+      "id": "splitter-2-up",
+      "labels": {
+        "LAYER": "1",
+        "DEVICE": "splitter-2",
+        "role": "pon-splitter",
+        "manufacturer": "Huawei",
+        "_x": "1075",
+        "_y": "1775"
+      }
+    },
+    {
+      "id": "olt-1",
+      "labels": {
+        "LAYER": 2,
+        "DEVICE": "olt-1",
+        "role": "olt",
+        "manufacturer": "Huawei",
+        "_x": "1475",
+        "_y": "1625"
+      }
+    },
+    {
+      "id": "bng-1",
+      "labels": {
+        "LAYER": "3",
+        "DEVICE": "bng-1",
+        "role": "bng",
+        "manufacturer": "Huawei",
+        "_x": "1700",
+        "_y": "1700"
+      }
+    },
+    {
+      "id": "sw-2",
+      "labels": {
+        "LAYER": 2,
+        "DEVICE": "sw-2",
+        "role": "switch",
+        "host": "sw-2",
+        "manufacturer": "TP-Link",
+        "_x": "300",
+        "_y": "2100"
+      }
+    },
+    {
+      "id": "client-4",
+      "labels": {
+        "LAYER": "3",
+        "DEVICE": "client-4",
+        "role": "client",
+        "host": "client-4",
+        "manufacturer": "Apple",
+        "l3_ip": "192.168.178.12",
+        "_x": "50",
+        "_y": "2025"
+      }
+    },
+    {
+      "id": "gateway-3",
+      "labels": {
+        "LAYER": "3",
+        "DEVICE": "gateway-3",
+        "role": "router",
+        "host": "gateway-3",
+        "manufacturer": "AVM",
+        "l3_ip": "192.168.178.1",
+        "_x": "575",
+        "_y": "2100"
+      }
+    },
+    {
+      "id": "ont-3",
+      "labels": {
+        "LAYER": "2",
+        "DEVICE": "ont-3",
+        "role": "ont",
+        "host": "ont-3",
+        "manufacturer": "Huawei",
+        "_x": "850",
+        "_y": "2100"
+      }
+    },
+    {
+      "id": "client-5",
+      "labels": {
+        "LAYER": "3",
+        "DEVICE": "client-5",
+        "role": "client",
+        "host": "client-5",
+        "manufacturer": "Google",
+        "l3_ip": "192.168.178.50",
+        "_x": "300",
+        "_y": "2250"
+      }
+    },
+    {
+      "id": "gateway-4",
+      "labels": {
+        "LAYER": "3",
+        "DEVICE": "gateway-4",
+        "role": "router",
+        "host": "gateway-4",
+        "manufacturer": "AVM",
+        "l3_ip": "192.168.178.1",
+        "_x": "575",
+        "_y": "2250"
+      }
+    },
+    {
+      "id": "ont-4",
+      "labels": {
+        "LAYER": "2",
+        "DEVICE": "ont-4",
+        "role": "ont",
+        "host": "ont-4",
+        "manufacturer": "Huawei",
+        "_x": "850",
+        "_y": "2250"
+      }
+    },
+    {
+      "id": "splitter-3-up",
+      "labels": {
+        "LAYER": "1",
+        "DEVICE": "splitter-3",
+        "role": "pon-splitter",
+        "manufacturer": "Huawei",
+        "_x": "1200",
+        "_y": "2100"
+      }
+    },
+    {
+      "id": "olt-2",
+      "labels": {
+        "LAYER": 2,
+        "DEVICE": "olt-2",
+        "role": "olt",
+        "manufacturer": "Huawei",
+        "_x": "1475",
+        "_y": "1800"
+      }
+    },
+    {
+      "id": "nas-2",
+      "labels": {
+        "LAYER": "3",
+        "DEVICE": "nas-2",
+        "role": "server",
+        "host": "nas-2",
+        "manufacturer": "QNAP",
+        "l3_ip": "192.168.178.42",
+        "_x": "50",
+        "_y": "2175"
+      }
+    },
+    {
+      "id": "splitter-1-down",
+      "labels": {
+        "LAYER": "1",
+        "DEVICE": "splitter-1",
+        "role": "pon-splitter",
+        "manufacturer": "Huawei",
+        "_x": "1225",
+        "_y": "1675"
+      }
+    },
+    {
+      "id": "splitter-2-down",
+      "labels": {
+        "LAYER": "1",
+        "DEVICE": "splitter-2",
+        "role": "pon-splitter",
+        "manufacturer": "Huawei",
+        "_x": "1075",
+        "_y": "1825"
+      }
+    },
+    {
+      "id": "splitter-3-down",
+      "labels": {
+        "LAYER": "1",
+        "DEVICE": "splitter-3",
+        "role": "pon-splitter",
+        "manufacturer": "Huawei",
+        "_x": "1200",
+        "_y": "2150"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "nas-1-to-sw-1",
+      "src": "nas-1",
+      "dst": "sw-1",
+      "match": {
+        "l3_src_ip": "192.168.178.100",
+        "l3_dst_ip": "!192.168.178.100"
+      },
+      "actions": {},
+      "labels": {
+        "speed": "1G"
+      }
+    },
+    {
+      "id": "sw-1-to-nas-1",
+      "src": "sw-1",
+      "dst": "nas-1",
+      "match": {
+        "l3_dst_ip": "192.168.178.100",
+        "l3_src_ip": "!192.168.178.100"
+      },
+      "actions": {},
+      "labels": {
+        "speed": "10G"
+      }
+    },
+    {
+      "id": "client-1-to-sw-1",
+      "src": "client-1",
+      "dst": "sw-1",
+      "match": {
+        "l3_src_ip": "192.168.178.12",
+        "l3_dst_ip": "!192.168.178.12"
+      },
+      "actions": {},
+      "labels": {
+        "speed": "1G"
+      }
+    },
+    {
+      "id": "sw-1-to-gateway-1",
+      "src": "sw-1",
+      "dst": "gateway-1",
+      "match": {
+        "l3_src_ip": "!192.168.178.1",
+        "l3_dst_ip": "!192.168.178.0/24"
+      },
+      "actions": {},
+      "labels": {
+        "speed": "1G"
+      }
+    },
+    {
+      "id": "gateway-1-to-ont-1",
+      "src": "gateway-1",
+      "dst": "ont-1",
+      "match": {
+        "l3_src_ip": "192.168.178.0/24",
+        "l3_dst_ip": "!192.168.178.0/24"
+      },
+      "actions": {
+        "l3_src_ip": "83.14.0.101",
+        "l4_src_port": "30000-32000"
+      },
+      "labels": {
+        "speed": "1G"
+      }
+    },
+    {
+      "id": "ont-1-to-splitter-1",
+      "src": "ont-1",
+      "dst": "splitter-1-up",
+      "match": {
+        "l3_dst_ip": "!83.14.0.101"
+      },
+      "actions": {},
+      "labels": {
+        "speed": "1.25G"
+      }
+    },
+    {
+      "id": "gateway-2-to-ont-2",
+      "src": "gateway-2",
+      "dst": "ont-2",
+      "match": {
+        "l3_src_ip": "192.168.178.0/24",
+        "l3_dst_ip": "!192.168.178.0/24"
+      },
+      "actions": {
+        "l3_src_ip": "83.14.0.102",
+        "l4_src_port": "30000-32000"
+      },
+      "labels": {
+        "speed": "1G"
+      }
+    },
+    {
+      "id": "ont-2-to-splitter-2",
+      "src": "ont-2",
+      "dst": "splitter-2-up",
+      "match": {
+        "l3_dst_ip": "!83.14.0.102"
+      },
+      "actions": {},
+      "labels": {
+        "speed": "1.25G"
+      }
+    },
+    {
+      "id": "splitter-2-to-splitter-1",
+      "src": "splitter-2-up",
+      "dst": "splitter-1-up",
+      "match": {},
+      "actions": {},
+      "labels": {
+        "speed": "1.25G"
+      }
+    },
+    {
+      "id": "splitter-1-to-olt-1",
+      "src": "splitter-1-up",
+      "dst": "olt-1",
+      "match": {},
+      "actions": {},
+      "labels": {
+        "speed": "1.25G"
+      }
+    },
+    {
+      "id": "e23",
+      "src": "gateway-1",
+      "dst": "sw-1",
+      "match": {
+        "l3_dst_ip": "192.168.178.0/24"
+      },
+      "actions": {},
+      "labels": {}
+    },
+    {
+      "id": "gateway-1-port-forward",
+      "src": "ont-1",
+      "dst": "gateway-1",
+      "match": {
+        "l3_dst_ip": "83.14.0.101",
+        "l3_src_ip": "!83.14.0.101|192.168.178.0/24",
+        "l4_dst_port": "80"
+      },
+      "actions": {
+        "l3_dst_ip": "192.168.178.100"
+      },
+      "labels": {}
+    },
+    {
+      "id": "e247",
+      "src": "client-2",
+      "dst": "gateway-2",
+      "match": {
+        "l3_src_ip": "192.168.178.50",
+        "l3_dst_ip": "!192.168.178.50"
+      },
+      "actions": {},
+      "labels": {
+        "speed": "500M"
+      }
+    },
+    {
+      "id": "e248",
+      "src": "gateway-2",
+      "dst": "client-2",
+      "match": {
+        "l3_dst_ip": "192.168.178.12",
+        "l3_src_ip": "!192.168.178.12"
+      },
+      "actions": {},
+      "labels": {
+        "speed": "500M"
+      }
+    },
+    {
+      "id": "e249",
+      "src": "sw-1",
+      "dst": "client-1",
+      "match": {
+        "l3_dst_ip": "192.168.178.12",
+        "l3_src_ip": "!192.168.178.12"
+      },
+      "actions": {},
+      "labels": {
+        "speed": "500M"
+      }
+    },
+    {
+      "id": "e250",
+      "src": "client-3",
+      "dst": "gateway-2",
+      "match": {
+        "l3_src_ip": "192.168.178.52",
+        "l3_dst_ip": "!192.168.178.52"
+      },
+      "actions": {},
+      "labels": {
+        "speed": "2.5G"
+      }
+    },
+    {
+      "id": "e251",
+      "src": "gateway-2",
+      "dst": "client-3",
+      "match": {
+        "l3_dst_ip": "192.168.178.52",
+        "l3_src_ip": "!192.168.178.50"
+      },
+      "actions": {},
+      "labels": {
+        "speed": "2.5G"
+      }
+    },
+    {
+      "id": "e252",
+      "src": "olt-1",
+      "dst": "bng-1",
+      "match": {},
+      "actions": {},
+      "labels": {
+        "speed": "10G"
+      }
+    },
+    {
+      "id": "e253",
+      "src": "bng-1",
+      "dst": "olt-1",
+      "match": {},
+      "actions": {},
+      "labels": {
+        "speed": "10G"
+      }
+    },
+    {
+      "id": "e260",
+      "src": "client-4",
+      "dst": "sw-2",
+      "match": {
+        "l3_src_ip": "192.168.178.12",
+        "l3_dst_ip": "!192.168.178.12"
+      },
+      "actions": {},
+      "labels": {
+        "speed": "1G"
+      }
+    },
+    {
+      "id": "e261",
+      "src": "sw-2",
+      "dst": "gateway-3",
+      "match": {
+        "l3_src_ip": "!192.168.178.1",
+        "l3_dst_ip": "!192.168.178.0/24"
+      },
+      "actions": {},
+      "labels": {
+        "speed": "1G"
+      }
+    },
+    {
+      "id": "e262",
+      "src": "gateway-3",
+      "dst": "ont-3",
+      "match": {
+        "l3_src_ip": "192.168.178.0/24",
+        "l3_dst_ip": "!192.168.178.0/24"
+      },
+      "actions": {
+        "l3_src_ip": "83.14.0.103",
+        "l4_src_port": "30000-32000"
+      },
+      "labels": {
+        "speed": "1G"
+      }
+    },
+    {
+      "id": "e263",
+      "src": "ont-3",
+      "dst": "splitter-3-up",
+      "match": {
+        "l3_dst_ip": "!83.14.0.103"
+      },
+      "actions": {},
+      "labels": {
+        "speed": "1.25G"
+      }
+    },
+    {
+      "id": "e264",
+      "src": "gateway-4",
+      "dst": "ont-4",
+      "match": {
+        "l3_src_ip": "192.168.178.0/24",
+        "l3_dst_ip": "!192.168.178.0/24"
+      },
+      "actions": {
+        "l3_src_ip": "83.14.0.104",
+        "l4_src_port": "30000-32000"
+      },
+      "labels": {
+        "speed": "1G"
+      }
+    },
+    {
+      "id": "e267",
+      "src": "splitter-3-up",
+      "dst": "olt-2",
+      "match": {},
+      "actions": {},
+      "labels": {
+        "speed": "1.25G"
+      }
+    },
+    {
+      "id": "e272",
+      "src": "gateway-3",
+      "dst": "sw-2",
+      "match": {
+        "l3_dst_ip": "192.168.178.0/24"
+      },
+      "actions": {},
+      "labels": {}
+    },
+    {
+      "id": "e273",
+      "src": "ont-3",
+      "dst": "gateway-3",
+      "match": {
+        "l3_dst_ip": "83.14.0.103",
+        "l3_src_ip": "!83.14.0.103|192.168.178.0/24",
+        "l4_dst_port": "80"
+      },
+      "actions": {
+        "l3_dst_ip": "192.168.178.42"
+      },
+      "labels": {}
+    },
+    {
+      "id": "e274",
+      "src": "client-5",
+      "dst": "gateway-4",
+      "match": {
+        "l3_src_ip": "192.168.178.50",
+        "l3_dst_ip": "!192.168.178.50"
+      },
+      "actions": {},
+      "labels": {
+        "speed": "500M"
+      }
+    },
+    {
+      "id": "e275",
+      "src": "gateway-4",
+      "dst": "client-5",
+      "match": {
+        "l3_dst_ip": "192.168.178.12",
+        "l3_src_ip": "!192.168.178.12"
+      },
+      "actions": {},
+      "labels": {
+        "speed": "500M"
+      }
+    },
+    {
+      "id": "e276",
+      "src": "sw-2",
+      "dst": "client-4",
+      "match": {
+        "l3_dst_ip": "192.168.178.12",
+        "l3_src_ip": "!192.168.178.12"
+      },
+      "actions": {},
+      "labels": {
+        "speed": "500M"
+      }
+    },
+    {
+      "id": "e279",
+      "src": "olt-2",
+      "dst": "bng-1",
+      "match": {},
+      "actions": {},
+      "labels": {
+        "speed": "10G"
+      }
+    },
+    {
+      "id": "e280",
+      "src": "bng-1",
+      "dst": "olt-2",
+      "match": {},
+      "actions": {},
+      "labels": {
+        "speed": "10G"
+      }
+    },
+    {
+      "id": "e281",
+      "src": "ont-4",
+      "dst": "splitter-3-up",
+      "match": {
+        "l3_dst_ip": "!83.14.0.104"
+      },
+      "actions": {},
+      "labels": {
+        "speed": "1.25G"
+      }
+    },
+    {
+      "id": "e283",
+      "src": "sw-2",
+      "dst": "nas-2",
+      "match": {
+        "l3_dst_ip": "192.168.178.42",
+        "l3_src_ip": "!192.168.178.42"
+      },
+      "actions": {},
+      "labels": {
+        "speed": "10G"
+      }
+    },
+    {
+      "id": "e284",
+      "src": "nas-2",
+      "dst": "sw-2",
+      "match": {
+        "l3_src_ip": "192.168.178.42",
+        "l3_dst_ip": "!192.168.178.42"
+      },
+      "actions": {},
+      "labels": {
+        "speed": "10G"
+      }
+    },
+    {
+      "id": "e312",
+      "src": "splitter-1-down",
+      "dst": "ont-1",
+      "match": {
+        "l3_dst_ip": "83.14.0.101"
+      },
+      "actions": {},
+      "labels": {
+        "speed": "2.5G"
+      }
+    },
+    {
+      "id": "e313",
+      "src": "olt-1",
+      "dst": "splitter-1-down",
+      "match": {
+        "l3_dst_ip": "83.14.0.0/16"
+      },
+      "actions": {},
+      "labels": {
+        "speed": "2.5G"
+      }
+    },
+    {
+      "id": "e314",
+      "src": "splitter-1-down",
+      "dst": "splitter-2-down",
+      "match": {},
+      "actions": {},
+      "labels": {
+        "speed": "2.5G"
+      }
+    },
+    {
+      "id": "e315",
+      "src": "splitter-2-down",
+      "dst": "ont-2",
+      "match": {
+        "l3_dst_ip": "83.14.0.102"
+      },
+      "actions": {},
+      "labels": {
+        "speed": "2.5G"
+      }
+    },
+    {
+      "id": "e316",
+      "src": "splitter-3-down",
+      "dst": "ont-3",
+      "match": {
+        "l3_dst_ip": "83.14.0.103"
+      },
+      "actions": {},
+      "labels": {
+        "speed": "2.5G"
+      }
+    },
+    {
+      "id": "e317",
+      "src": "splitter-3-down",
+      "dst": "ont-4",
+      "match": {
+        "l3_dst_ip": "83.14.0.104"
+      },
+      "actions": {},
+      "labels": {
+        "speed": "2.5G"
+      }
+    },
+    {
+      "id": "e318",
+      "src": "olt-2",
+      "dst": "splitter-3-down",
+      "match": {
+        "l3_dst_ip": "83.14.0.0/16"
+      },
+      "actions": {},
+      "labels": {
+        "speed": "2.5G"
+      }
+    }
+  ]
+}
